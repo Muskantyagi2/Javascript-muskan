@@ -1,3 +1,5 @@
+//***************Datatype conversion******************
+
 let score = "33"//only work with number but in string form like "muskan"
 let score2 = "muskan"
 let num = 44 
@@ -35,8 +37,58 @@ true =>Number = 1, false => Number = 0
 
 let LoggedIn = true
 let LoggedInNum = Number(LoggedIn)
-console.log("Boolean to Number ",LoggedInNum)
+//console.log("Boolean to Number ",LoggedInNum)
 
 let LoggedOut = "muskan"
 let LoggedOutBool = Boolean (LoggedOut)
-console.log("number to cboolean ", LoggedOutBool)
+//console.log("number to cboolean ", LoggedOutBool)
+
+
+
+//*************operation******************/
+let value = 3
+let negVlaue = -value
+// console.log(negVlaue)
+
+
+//ARITHMETIC OPERATION
+// console.log(2+3)
+// console.log(2-3)
+// console.log(2*3)
+// console.log(2**3)
+// console.log(2%3)
+
+let str1 = "hei "
+let str2= "muskan"
+let str3 = str1 + str2
+//console.log(str3)
+
+
+//conactenation according to prefrence of string or number we can say 
+// console.log("1" + 2)// 12
+// console.log(1 + "2") //12
+// console.log("1"+2+2)  //122
+// console.log(2+2+"1")//41
+
+
+//PREFIX AND POSTFIX INCREMENT
+
+//prefix
+let x = 3     //value assign 3
+let y = ++x       //first we will do increment i.e, x + 1 = 4    , then assign value of x to y ie, 4
+
+console.log("prefix value of x is ", x) //4
+console.log("value of y is ", y) //4
+
+
+
+//postfix
+let a = 2            //assign value 2
+let b = a++             // then assign value of a ie, 2 to b , now value of b = 2,         then we increment value of a ie, a+1 = 3 , now value of a = 3
+
+console.log("postfix value of a : ", a) //3
+console.log("value of b :", b)  //2
+
+
+
+
