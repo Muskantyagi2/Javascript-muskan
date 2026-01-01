@@ -1,9 +1,17 @@
 "use strict"   //treat all js code as new version
 
-// alert ( 3 + 3)     show error in node.js but it will work fine in browser
-//READILIBITY  CODE is imp
 
-//documentation - MDN    &   tc39.es  ( ECMA ) for standard like for loop output .....
+/*
+JS - dynamically typed lanaguge becasue in this we dont have to define data type of variable while defining it 
+
+*/
+
+/*
+
+DATATYPE - primitive(call by value) and non-primitive (call by reference)
+datatype decides on the basis of " how the data is stored in memory and how we can access them"
+
+*/
 
 
 /*
@@ -18,6 +26,8 @@ data type - primitive data types :-
 
 non-primitive data types :-
 1. object
+2. array
+3. function
 */
 
 
