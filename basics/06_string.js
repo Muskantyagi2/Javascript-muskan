@@ -41,3 +41,5 @@ console.log(user.endsWith('muskan!',6))   // false
 
 console.log(user.startsWith('m',0))  // true   - it will check whether the string starts with 'm' or not
 
+console.log(user.includes("an"))  // true - it will check if the string is present in the given string or not
+
