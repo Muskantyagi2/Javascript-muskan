@@ -37,8 +37,29 @@ non-primitive data types :-
 // console.log("symbol : ", Symbol("id"))
 // console.log("BigInt : ", 1234567890123456789012345678901234567890n)
 const bigNumber = 12543n;
-console.log(typeof bigNumber); //bigint
+// console.log(typeof bigNumber); //bigint
 
 // console.log(typeof null)   //object
 
 // console.log(typeof undefined)   //undefined
+
+
+
+//code - array, object ,function  (datatype - object )
+
+//array
+const heores = [ "shaktiman","batman","yashraj"]
+console.log(typeof heores)
+
+//object 
+const myobj = {
+    name:"muskan",
+    age:21,
+}
+console.log(typeof myobj)
+
+//fucntion
+let myfucn = function (){
+    console.log("heyy")
+}
+console.log(typeof myfucn) //fucntion object
