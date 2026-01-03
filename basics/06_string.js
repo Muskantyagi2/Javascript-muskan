@@ -26,20 +26,33 @@ let user = new String ('muskan')
 // console.log(user.toUpperCase())
 // console.log(user.length)
 
-console.log(user.charAt(4))   // it will give the character at index 4
-console.log(user.indexOf('s'))   // it will give the index of character s   
+// console.log(user.charAt(4))   // it will give the character at index 4
+// console.log(user.indexOf('s'))   // it will give the index of character s   
 
-console.log(user.charCodeAt(3))   //it will give unicode of charcter at index 3
+// console.log(user.charCodeAt(3))   //it will give unicode of charcter at index 3
 
-// concat method
-let user2 = new String(' tyagi')
-console.log(user.concat(user2))   // it will concatenate two strings
+// // concat method
+// let user2 = new String(' tyagi')
+// console.log(user.concat(user2))   // it will concatenate two strings
 
 
-console.log(user.endsWith('muskan',6))  // true    - it will check whether the string ends with 'muskan' or not
-console.log(user.endsWith('muskan!',6))   // false
+// console.log(user.endsWith('muskan',6))  // true    - it will check whether the string ends with 'muskan' or not
+// console.log(user.endsWith('muskan!',6))   // false
 
-console.log(user.startsWith('m',0))  // true   - it will check whether the string starts with 'm' or not
+// console.log(user.startsWith('m',0))  // true   - it will check whether the string starts with 'm' or not
 
-console.log(user.includes("an"))  // true - it will check if the string is present in the given string or not
+// console.log(user.includes("an"))  // true - it will check if the string is present in the given string or not
 
+
+let para = "The dog is between two another dog"
+let searchTerm = "dog"
+let indexOfFirst = para.indexOf(searchTerm)
+
+console.log(`inex of first ${searchTerm} is ${indexOfFirst}`);
+
+console.log(
+  `The index of the second "${searchTerm}" is ${para.indexOf(
+    searchTerm,
+    indexOfFirst + 1,
+  )}`,
+);
