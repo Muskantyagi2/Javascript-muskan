@@ -77,10 +77,22 @@ console.log((Math.random()*10)+1)   // it will give number between 1 to less tha
 
 
 
-const min = 2
-const max = 40
+// const min = 2
+// const max = 40
 
-console.log(Math.floor((Math.random() * (max - min +1))+ min))  // it will give random number between min and max including both
+// console.log(Math.floor((Math.random() * (max - min +1))+ min))  // it will give random number between min and max including both
 
 
 
+
+//otp genration
+
+function otp (){
+    let min = 100000
+    let max = 999999
+
+    let otp = Math.floor((Math.random() * (max - min + 1)) + min)
+    return otp
+}
+
+otp()
