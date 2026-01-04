@@ -45,3 +45,42 @@ const sample1 = 10000000
 
 //+++++++++++++++++++++++++++++++ MATH  +++++++++++++++++++++++++++++++++++++++
 
+// Math is a built-in object that has properties and methods for mathematical constants and functions. It’s not a function object.
+
+
+// console.log(Math.PI)
+//there are several others properties like Math.E , Math.SQRT2 , Math.LN10 etc
+
+//maths method
+
+// console.log(Math.abs(-7))  //7
+// console.log(Math.round(4.5))  //5  // it will round off to nearest integer 
+// console.log(Math.round(4.2))  //4
+
+// console.log(Math.ceil(4.5))  //5  it will take upper interger
+// console.log(Math.ceil(4.2))  //5
+
+// console.log(Math.floor(4.7))  //4 it will take lower integer
+// console.log(Math.floor(4.2))  //4 
+
+
+// console.log(Math.max(2,6,1,4))
+// console.log(Math.min(2,6,1,4))
+
+//random
+
+// console.log(Math.random())  //it will generate radom number bewteen ( 0 -1 )  excluding 1
+
+// console.log(Math.floor(Math.random()+1))   // it will always give 1  because random will generate number between 0 to less than 1 so after adding 1 it will be between 1 to less than 2 and floor will make it 1
+
+console.log((Math.random()*10)+1)   // it will give number between 1 to less than 11  - to shift value to before decimal we multiply it by 10
+
+
+
+const min = 2
+const max = 40
+
+console.log(Math.floor((Math.random() * (max - min +1))+ min))  // it will give random number between min and max including both
+
+
+
