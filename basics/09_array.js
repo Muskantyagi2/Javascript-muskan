@@ -48,18 +48,60 @@ const newarr = arr.join()
 
 
 //8. slice() - it is use to extract a portion of an array and return - it does not change elemnet in original array 
-console.log("A", arr)
-console.log(arr.slice(0,2))  //it will extract element from index 0 to index 2 but not include index 2
+// console.log("A", arr)
+// console.log(arr.slice(0,2))  //it will extract element from index 0 to index 2 but not include index 2
 
 
-//9. splice() - it also includes range , it remove the certain elemnts from and array and display them - it do chnegs in original array
-console.log("b",arr)
-console.log(arr.splice(1,2))   // 1= starting index , 2= number of elements to be removed
-console.log("c",arr)
+// //9. splice() - it also includes range , it remove the certain elemnts from and array and display them - it do chnegs in original array
+// console.log("b",arr)
+// console.log(arr.splice(1,2))   // 1= starting index , 2= number of elements to be removed
+// console.log("c",arr)
 
 
-arr.unshift(12,13,14)
-console.log("d",arr)
+// arr.unshift(12,13,14)
+// console.log("d",arr)
 
-console.log(arr.splice(0,3))  
-console.log("e",arr)
+// console.log(arr.splice(0,3))  
+// console.log("e",arr)
+
+
+
+// add two arrays
+const arr1 = [1,2,3]
+const arr2= [4,5,6]
+
+// arr1.push(arr2)  [1,2,3,[4,5,6]]
+// console.log(arr1)   // it will add arr2 as a single element in arr1 - chnge in original array
+
+
+const concatarr = arr1.concat(arr2) // it will add elemnts of arr2 in arr1 - no chnge in original array
+// console.log(concatarr)  //[1,2,3,4,5,6]
+
+
+
+//spread operator  - it is also use to add two arrays
+const newconcat = [...arr1, ...arr2]
+// console.log(newconcat)
+
+
+//flat - it is use to convert multi dimensional array into single dimensional array
+const imgar = [1,2,3,[4,5,6],7,[3,[5,6]]]
+const realarr = imgar.flat(2)  //2 is the depth level - we can use infinity also
+// console.log(realarr)
+
+
+
+//when we have to check if our data is array or not
+console.log(Array.isArray("muskan"))
+//to convert array into string
+console.log(Array.from("muskan"))
+
+console.log(Array.from({name:"muskan"}))  // it will convert object into array with undefined values - return empty values
+
+
+//of - it creates array from the given values
+const score1 = [1,2,3]
+const score2 = 200
+const score3 = 300
+
+console.log(Array.of(score1,score2,score3))
